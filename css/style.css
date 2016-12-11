@@ -6,3 +6,11 @@ html, body {
 
 /* LOGO */
 #logo img { padding-top: 20px; }
+
+/* INTRO */
+#intro p {
+  color: white;
+  text-align: center;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 1.8em;
+}
