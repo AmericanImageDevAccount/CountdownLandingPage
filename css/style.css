@@ -1,5 +1,8 @@
-html {
+html, body {
   background: url('../img/bg.jpg') center center no-repeat;
   height: 100%;
   background-size: cover;
 }
+
+/* LOGO */
+#logo img { padding-top: 20px; }
