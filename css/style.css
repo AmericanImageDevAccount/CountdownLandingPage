@@ -14,3 +14,12 @@ html, body {
   font-family: 'Just Another Hand', cursive;
   font-size: 1.8em;
 }
+
+/* COUNTER */
+#counter .countdown {
+  text-align: center;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
+  margin: -15px 0 0;
+}
