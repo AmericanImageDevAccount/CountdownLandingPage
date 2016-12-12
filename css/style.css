@@ -1,4 +1,4 @@
-html, body {
+body,html {
   background: url('../img/bg.jpg') center center no-repeat;
   height: 100%;
   background-size: cover;
@@ -53,5 +53,20 @@ html, body {
 #icons .instagram:hover {
   color: #bc2a8d;
   bottom: 5px;
+}
+
+/* SIGNUP */
+#signup {
+  text-align: center;
+}
+
+#signup .btn-signup {
+  background-color: rgba(161,186,226,0.5);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+#signup .btn-signup:hover {
+  background-color: rgba(37,165,82,1);
 }
 
