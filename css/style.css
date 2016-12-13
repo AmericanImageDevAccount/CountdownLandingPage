@@ -4,6 +4,20 @@ body,html {
   background-size: cover;
 }
 
+/* MEDIA QUERIES */
+@media(max-width: 768px) {
+  #logo img { width: 50%; }
+  #counter .countdown { font-size: 1.4em !important; }
+  #icons .fa { 
+    margin: 10px 0 0 !important;
+    font-size: 2em;
+  }
+}
+
+@media (min-width:321px) and (max-width: 568px) {
+  #logo img { width: 20%; }
+}
+
 /* LOGO */
 #logo img { padding-top: 20px; }
 
