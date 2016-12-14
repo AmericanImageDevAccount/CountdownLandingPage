@@ -1,3 +1,45 @@
+<?php
+  // controllo che sia stato cliccato il submit
+  if(isset($_POST['submit'])) {
+    // setto il mittente della mail
+    $from = $_POST['email'];
+    // setto il destinatario
+    $to = 'info@startae14.gq';
+    // l'oggetto
+    $subject = 'Email signup';
+    $subjectConf = 'Email confirmation';
+    
+    // ed il corpo
+    $body = 'Please sign me up to the mailing list';
+    
+    $response = 'Thank you. See you soon!';
+    
+    $headers = 'From: ' . $from . "\r\n" .
+    'Reply-To: ' . $from . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+    
+    // controllo se nn è stato inserito un valore per la email
+    if(!$_POST['email']) {
+      // setto il messaggio errore
+      $emailError = 'Please enter a valid email address';
+    }
+    
+    // se invece nn ci sono errori
+    if (!$emailError) {
+      // se va a buon fine l'invio email
+      if (mail ($to, $subject, $body, $headers)) {
+        // do messaggio di successo
+        $result = 'thank you we\'ll keep you updated';
+        mail ($from, $subjectConf, $response, $headers);
+      // se invece qualcosa nell'invio mail nn va a buon fine
+      } else {
+        // do il messaggio di errore
+        $result = 'sorry there is been an error, please try again';        
+      }
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -86,6 +128,10 @@
               <input type="email" class="form-control form-control-sm" name="email" placeholder="Enter your email">
               <button type="submit" class="btn btn-signup btn-sm" name="submit" value="send">find out more</button>
             </form>
+            
+            <?php echo $emailError;?>
+            <?php echo $result;?>
+  
           </div>
         </div>
       </div>

@@ -5,4 +5,4 @@ https://simotae14.github.io/CountdownLandingPage/index.html
 
 con form funzionante
 
-http://startae14.gq/countdown/js
+http://startae14.gq/countdown
