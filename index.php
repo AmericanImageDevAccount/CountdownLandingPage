@@ -21,7 +21,7 @@
     // controllo se nn è stato inserito un valore per la email
     if(!$_POST['email']) {
       // setto il messaggio errore
-      $emailError = 'Please enter a valid email address';
+      $emailError = '<div class="text-danger"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> &nbsp;Please enter a valid email address</div>';
     }
     
     // se invece nn ci sono errori
@@ -29,12 +29,12 @@
       // se va a buon fine l'invio email
       if (mail ($to, $subject, $body, $headers)) {
         // do messaggio di successo
-        $result = 'thank you we\'ll keep you updated';
+        $result = '<div class="text-success"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;thank you we\'ll keep you updated</div>';
         mail ($from, $subjectConf, $response, $headers);
       // se invece qualcosa nell'invio mail nn va a buon fine
       } else {
         // do il messaggio di errore
-        $result = 'sorry there is been an error, please try again';        
+        $result = '<div class="text-danger"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> &nbsp;sorry there is been an error, please try again</div>';        
       }
     }
   }
