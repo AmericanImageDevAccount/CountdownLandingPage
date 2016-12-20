@@ -14,7 +14,7 @@ body,html {
   }
 }
 
-@media (min-width:321px) and (max-width: 568px) {
+@media (min-width:321px) and (max-width: 568px) and (orientation : landscape){
   #logo img { width: 20%; }
 }
 
