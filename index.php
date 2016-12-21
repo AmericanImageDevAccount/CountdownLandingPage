@@ -10,7 +10,8 @@
     $subjectConf = 'Email confirmation';
     
     // ed il corpo
-    $body = 'Please sign me up to the mailing list';
+    $body = file_get_contents("email_template/thanks_email.html");
+    //$body = 'Please sign me up to the mailing list';
     
     $response = 'Thank you. See you soon!';
     
