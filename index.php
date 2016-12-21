@@ -15,9 +15,13 @@
     
     $response = 'Thank you. See you soon!';
     
-    $headers = 'From: ' . $from . "\r\n" .
-    'Reply-To: ' . $from . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+    // Set content-type header for sending HTML email
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+    // Additional headers
+    $headers .= 'From: ' . $from . "\r\n";
+    $headers .= 'Reply-To: ' . $from . "\r\n";
     
     // controllo se nn è stato inserito un valore per la email
     if(!$_POST['email']) {
@@ -31,7 +35,14 @@
       if (mail ($to, $subject, $body, $headers)) {
         // do messaggio di successo
         $result = '<div class="text-success"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;thank you we\'ll keep you updated</div>';
-        mail ($from, $subjectConf, $response, $headers);
+        // Set content-type header for sending HTML email
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+        // Additional headers
+        $headers .= 'From: ' . $to . "\r\n";
+        $headers .= 'Reply-To: ' . $to . "\r\n";
+        mail ($from, $subjectConf, $body, $headers);
       // se invece qualcosa nell'invio mail nn va a buon fine
       } else {
         // do il messaggio di errore
