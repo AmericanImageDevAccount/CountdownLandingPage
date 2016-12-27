@@ -26,7 +26,7 @@
     // controllo se nn è stato inserito un valore per la email
     if(!$_POST['email']) {
       // setto il messaggio errore
-      $emailError = '<div class="text-danger"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> &nbsp;Please enter a valid email address</div>';
+      $emailError = '<script> toastMessage("<i class=\"fa fa-exclamation-triangle\" aria-hidden=\"true\"></i> &nbsp;Please enter a valid email address", "error"); </script>';
     }
     
     // se invece nn ci sono errori
@@ -34,7 +34,7 @@
       // se va a buon fine l'invio email
       if (mail ($to, $subject, $body, $headers)) {
         // do messaggio di successo
-        $result = '<div class="text-success"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;thank you we\'ll keep you updated</div>';
+        $result = '<script> toastMessage("<i class=\"fa fa-check\" aria-hidden=\"true\"></i> &nbsp;thank you we\'ll keep you updated", "success"); </script>';
         // Set content-type header for sending HTML email
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
@@ -46,7 +46,7 @@
       // se invece qualcosa nell'invio mail nn va a buon fine
       } else {
         // do il messaggio di errore
-        $result = '<div class="text-danger"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> &nbsp;sorry there is been an error, please try again</div>';        
+        $result = '<script> toastMessage("<i class=\"fa fa-exclamation-triangle\" aria-hidden=\"true\"></i> &nbsp;sorry there is been an error, please try again", "error"); </script>';
       }
     }
   }
@@ -140,15 +140,14 @@
               <input type="email" class="form-control form-control-sm" name="email" placeholder="Enter your email">
               <button type="submit" class="btn btn-signup btn-sm" name="submit" value="send">find out more</button>
             </form>
-            
-            <?php echo $emailError;?>
-            <?php echo $result;?>
-  
           </div>
         </div>
       </div>
     </section>
     <!-- END SIGNUP -->    
+
+    <div id="snackbar">Some text some message..</div>
+
     
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
@@ -162,7 +161,20 @@
         $('.countdown').countdown({
             date: "June 7, 2027 15:03:26"
         });
-    });
+      });
+
+      function toastMessage(message, classEle) {
+        // Get the snackbar DIV
+        var x = document.getElementById("snackbar")
+        // Add the "show" class to DIV
+        x.className = "show " + classEle;
+        x.innerHTML = message;
+
+        // After 3 seconds, remove the show class from DIV
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
     </script>
+    <?php echo $emailError;?>
+    <?php echo $result;?>
   </body>
 </html>
