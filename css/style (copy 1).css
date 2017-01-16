@@ -1,9 +1,6 @@
 body,html {
-  background: url('../img/bg.jpg') center center no-repeat fixed;
+  background: url('../img/bg.jpg') center center no-repeat;
   height: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -24,49 +21,21 @@ body,html {
 /* LOGO */
 #logo img { padding-top: 20px; }
 
-/* TEASER */
-#teaser p {
-  color: #71b239;
-  text-align: center;
-  font-family: 'PT Serif', cursive;
-  font-size: 1.8em;
-}
-
-.better {
-  color: #71b239;
-}
-
-
 /* INTRO */
 #intro p {
   color: white;
   text-align: center;
-  font-family: 'Open Sans', cursive;
+  font-family: 'Just Another Hand', cursive;
   font-size: 1.8em;
-}
-
-/* BANNER */
-.banner h1 {
-  color: white;
-  text-align: center;
-  font-family: 'PT Serif';
-  font-size: 4em;
 }
 
 /* COUNTER */
 #counter .countdown {
   text-align: center;
-  color: #71b239;
-  font-family: 'Open Sans', cursive;
-  font-size: 2em;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
   margin: -15px 0 0;
-}
-
-.h1 {
-  text-align: center;
-  color: #002f77;
-  font-family: 'Open Sans';
-  font-size: 4em;
 }
 
 /* ICONS */
