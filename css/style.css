@@ -11,7 +11,7 @@ body,html {
 @media(max-width: 768px) {
   #logo img { width: 50%; }
   #counter .countdown { font-size: 1.4em !important; }
-  #icons .fa { 
+  #icons .fa {
     margin: 10px 0 0 !important;
     font-size: 2em;
   }
@@ -95,8 +95,8 @@ body,html {
   bottom: 5px;
 }
 
-#icons .instagram:hover {
-  color: #bc2a8d;
+#icons .linkedin:hover {
+  color: #0077b5;
   bottom: 5px;
 }
 
@@ -142,7 +142,7 @@ body,html {
 #snackbar.show {
     visibility: visible; /* Show the snackbar */
 
-/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar.
 However, delay the fade out process for 2.5 seconds */
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -150,7 +150,7 @@ However, delay the fade out process for 2.5 seconds */
 
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;} 
+    from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}
 }
 
@@ -160,7 +160,7 @@ However, delay the fade out process for 2.5 seconds */
 }
 
 @-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;} 
+    from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
 
