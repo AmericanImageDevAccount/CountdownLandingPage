@@ -26,14 +26,14 @@ body,html {
 
 /* TEASER */
 #teaser p {
-  color: #71b239;
+  color: #77c9d4;
   text-align: center;
   font-family: 'PT Serif', cursive;
   font-size: 1.8em;
 }
 
 .better {
-  color: #71b239;
+  color: #a4d555;
 }
 
 
@@ -56,7 +56,7 @@ body,html {
 /* COUNTER */
 #counter .countdown {
   text-align: center;
-  color: #71b239;
+  color: #88d317;
   font-family: 'Open Sans', cursive;
   font-size: 2em;
   margin: -15px 0 0;
@@ -64,7 +64,7 @@ body,html {
 
 .h1 {
   text-align: center;
-  color: #002f77;
+  color: #328cc1;
   font-family: 'Open Sans';
   font-size: 4em;
 }
