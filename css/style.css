@@ -36,10 +36,21 @@ body,html {
   color: #a4d555;
 }
 
+.content {
+    padding:20px;
+    width:80%;
+    margin-left: auto ;
+    margin-right: auto ;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.5);
+}
+
 
 /* INTRO */
 #intro p {
-  color: white;
+  color: green;
   text-align: center;
   font-family: 'Open Sans', cursive;
   font-size: 1.8em;
