@@ -1,5 +1,5 @@
 body,html {
-  background: url('../img/bg.jpg') center center no-repeat fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../img/bg.jpg') center center no-repeat fixed;
   height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -30,11 +30,21 @@ body,html {
 
 /* TEASER */
 #teaser p {
-  color: #31C3E7;
+  color: #083c5d;
   text-align: center;
   font-family: 'Open Sans', cursive;
   font-size: 1.8em;
 }
+
+#circle {
+  width: 100px;
+  height: 100px;
+  background: #083c5d;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
 
 .coming_soon {
   color: #31C3E7;
@@ -56,9 +66,9 @@ body,html {
     background-repeat:no-repeat;
     background-position: center center;
     /*background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
-    background: rgba(204, 204, 204, 0.8);
-    background: rgba(204, 204, 204, .85);
-    background: rgba(8, 93, 173, .8);
+    background: rgba(204, 204, 204, 0.5);
+    background: rgba(204, 204, 204, .5);
+    background: rgba(38, 156, 204, .6); 
 }
 
 
@@ -83,7 +93,7 @@ body,html {
 /* COUNTER */
 #counter .countdown {
   text-align: center;
-  color: #88d317;
+  color: #8cc739;
   font-family: 'Open Sans', cursive;
   font-size: 2em;
   margin: -15px 0 0;
