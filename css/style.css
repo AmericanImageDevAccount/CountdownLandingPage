@@ -24,8 +24,6 @@ body,html {
 /* LOGO */
   #logo img { 
   padding-top: 20px; 
-  height: 30%;
-  width: 30%;
   opacity: 1;     
   filter: alpha(opacity=90); /* For IE8 and earlier */
 }
