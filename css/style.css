@@ -30,7 +30,7 @@ body,html {
 
 /* TEASER */
 #teaser p {
-  color: #083c5d;
+  color: #9ed2c5;
   text-align: center;
   font-family: 'Open Sans', cursive;
   font-size: 1.8em;
@@ -39,7 +39,7 @@ body,html {
 #circle {
   width: 100px;
   height: 100px;
-  background: #083c5d;
+  background: #9ed2c5;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
@@ -47,7 +47,7 @@ body,html {
 
 
 .coming_soon {
-  color: #31C3E7;
+  color: #9ed2c5;
   text-align: center;
   font-family: 'Open Sans', cursive;
   font-size: 1.2em;
@@ -68,15 +68,15 @@ body,html {
     /*background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
     background: rgba(204, 204, 204, 0.5);
     background: rgba(204, 204, 204, .5);
-    background: rgba(38, 156, 204, .6); 
+    background: rgba(38, 156, 204, .5); 
 }
 
 
 /* INTRO */
 #intro p {
   color: green;
-  color: #436145;
-  color: rgba(255, 255, 255, 0.9);
+  color: #9ed2c5;
+  color: rgba(255, 255, 255, 0.8);
   text-align: center;
   font-family: 'PT Serif', cursive;
   font-size: 1.6em;
