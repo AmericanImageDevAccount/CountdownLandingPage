@@ -26,9 +26,10 @@ body,html {
   padding-top: 20px;
   height: auto; 
   width: auto; 
-  max-width: 400px; 
-  max-height: 400px;
-  size: 90%; 
+  background-size: 60%;
+  background-position: center;
+  max-width: 70%;
+  max-height: 70%;
   opacity: 1;     
   filter: alpha(opacity=90); /* For IE8 and earlier */
 }
