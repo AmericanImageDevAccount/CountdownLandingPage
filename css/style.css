@@ -34,12 +34,21 @@ body,html {
   filter: alpha(opacity=90); /* For IE8 and earlier */
 }
 
+/* TOP */
+.top {
+  color: #a4d555;
+  text-align: center;
+  font-family: 'Open Sans', cursive;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
 /* TEASER */
 #teaser p {
   color: #9ed2c5;
   text-align: center;
   font-family: 'Open Sans', cursive;
-  font-size: 1.8em;
+  font-size: 1.2em;
 }
 
 #circle {
@@ -56,7 +65,7 @@ body,html {
   color: #9ed2c5;
   text-align: center;
   font-family: 'Open Sans', cursive;
-  font-size: 1.2em;
+  font-size: 2em;
   font-weight: bold;
 }
 
