@@ -36,7 +36,7 @@ body,html {
 
 /* TOP */
 .top {
-  color: #a4d555;
+  color: #9ed2c5;
   text-align: center;
   font-family: 'Open Sans', cursive;
   font-size: 1.8em;
@@ -62,7 +62,7 @@ body,html {
 
 
 .coming_soon {
-  color: #9ed2c5;
+  color: #a4d555;
   text-align: center;
   font-family: 'Open Sans', cursive;
   font-size: 2em;
@@ -83,7 +83,7 @@ body,html {
     /*background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
     background: rgba(204, 204, 204, 0.5);
     background: rgba(204, 204, 204, .5);
-    background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), rgba(38, 156, 204, .6); 
+    background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), rgba(38, 156, 204, .8); 
 
 }
 
@@ -112,6 +112,7 @@ body,html {
   color: #8cc739;
   font-family: 'Open Sans', cursive;
   font-size: 2em;
+  font-weight: bold;
   margin: -15px 0 0;
 }
 
