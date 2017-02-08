@@ -43,6 +43,15 @@ body,html {
   font-weight: bold;
 }
 
+/* SUPPORT */
+.support {
+  color: rgba(77, 77, 77, 0.8);
+  text-align: center;
+  font-family: 'Open Sans', cursive;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 /* TEASER */
 #teaser p {
   color: #638f38;
