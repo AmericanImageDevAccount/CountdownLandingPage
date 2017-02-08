@@ -102,7 +102,10 @@ background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), rgba(255,
   color: green;
   color: #9ed2c5;
   color: rgba(77, 77, 77, 0.7);
-  text-align: center;
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: space-around; /* Safari 6.1+ */
+  display: flex;
+  justify-content: space-around;
   font-family: 'PT Serif', cursive;
   font-size: 1.6em;
 }
@@ -136,7 +139,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), rgba(255,
 #icons { text-align: center; }
 
 #icons .fa {
-  color: white;
+  color: #638f38;
   margin: 5px 15px;
   position: relative;
   bottom: 0;
