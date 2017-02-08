@@ -69,6 +69,13 @@ body,html {
   border-radius: 50px;
 }
 
+/* THIRD */
+.third {
+  text-align: center;
+  font-family: 'Open Sans', cursive;
+  font-size: .9em;
+  font-weight: bold;
+}
 
 .coming_soon {
   color: #638f38;
@@ -102,10 +109,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), rgba(255,
   color: green;
   color: #9ed2c5;
   color: rgba(77, 77, 77, 0.7);
-  display: -webkit-flex; /* Safari */
-  -webkit-justify-content: space-around; /* Safari 6.1+ */
-  display: flex;
-  justify-content: space-around;
+  text-align: justify;
   font-family: 'PT Serif', cursive;
   font-size: 1.6em;
 }
@@ -113,9 +117,16 @@ background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), rgba(255,
 /* BANNER */
 .banner h1 {
   color: 4d4d4d;
-  text-align: left;
+  text-align: center;
   font-family: 'PT Serif';
   font-size: 4em;
+}
+.banner p { 
+  color: 4d4d4d;
+  text-align: left;
+  font-family: 'PT Serif';
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 /* COUNTER */
