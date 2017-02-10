@@ -78,7 +78,7 @@ body,html {
 }
 
 .coming_soon {
-  color: #638f38;
+  color: white;
   text-align: center;
   font-family: 'Open Sans', cursive;
   font-size: 2em;
@@ -86,7 +86,7 @@ body,html {
 }
 
 .better {
-  color: #4d4d4d;
+  color: grey;
 }
 
 .content {
@@ -122,7 +122,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), rgba(255,
   font-size: 4em;
 }
 .banner p { 
-  color: 4d4d4d;
+  color: #6096ba;
   text-align: left;
   font-family: 'PT Serif';
   font-size: 2.5em;
