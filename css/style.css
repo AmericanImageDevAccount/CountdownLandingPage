@@ -79,7 +79,7 @@ body,html {
 }
 
 .coming_soon {
-  color: white;
+  color: #638f38;
   text-align: center;
   font-family: 'Open Sans', cursive;
   font-size: 2em;
@@ -87,7 +87,7 @@ body,html {
 }
 
 .better {
-  color: rgba(77, 77, 77, .8);
+  color: #638f38;
 }
 
 .content {
