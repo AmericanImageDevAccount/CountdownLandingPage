@@ -75,6 +75,7 @@ body,html {
   font-family: 'Open Sans', cursive;
   font-size: .9em;
   font-weight: bold;
+  color: rgba(77, 77, 77, .8);
 }
 
 .coming_soon {
@@ -86,7 +87,7 @@ body,html {
 }
 
 .better {
-  color: grey;
+  color: rgba(77, 77, 77, .8);
 }
 
 .content {
