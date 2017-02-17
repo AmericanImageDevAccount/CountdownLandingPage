@@ -12,21 +12,21 @@ body,html {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
-font-size: .8em;
+font-size: .5em;
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
 /* Styles */
-font-size: .8em;
+font-size: .5em;
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
 /* Styles */
-font-size: .8em;
+font-size: .5em;
 }
 
 /* iPads (portrait and landscape) ----------- */
